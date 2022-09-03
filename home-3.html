@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata D.I. Yogyakarta</title>
+    <body bgcolor="#009999">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header1">
+        <h3><a href="home.html"><font color="#F0F8FE">Home</font></a></h3>
+        <a href="https://salsawisata.com/paket-wisata-jogja/" target="_blank"><h3>Paket Wisata</h3></a>
+        <a href="https://www.yogyes.com/id/yogyakarta-tourism-object/" target="_blank"><h3>Objek Wisata</h3></a>
+        <h3><a href="booking.html">Booking</a></h3>
+        <h3><a href="section-contact.html">Contact Us</a></h3>
+    </div>
+
+    <div class="body1">
+       
+        <!-- carousel -->
+        <div class="mySlides fade">
+            <img src="resource/prambanan.png">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="resource/flag.png">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="resource/gunung2.png">
+          </div>
+          
+          </div>
+          
+          <div >
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+
+        <div class="header2">
+            <pre><h1>
+    Welcome to
+    Wisata Jogja
+            </h1></pre>
+        </div>
+
+        <div class="nav1">
+            <h4><b>Latest News</b></h4>
+            <br>
+            <p><a href="https://www.hipwee.com/travel/20-destinasi-wisata-hits-di-jogja-yang-harus-kamu-kunjungi-di-tahun-2018-bikin-kangen-jogja/" target="_blank">Daftar Wisata di Jogja yang Hits Terbaru</a></p>
+            <p><a href="https://www.hipwee.com/travel/pantai-untuk-kamping-di-jogja/" target="_blank">6 Pantai untuk Kamping Terbaik di Jogja</a></p>
+            <p><a href="https://www.hipwee.com/travel/rekomendasi-honeymoon-di-yogyakarta/" target="_blank">Daftar Tempat Honeymoon di Jogja yang Romantis</a></p>
+            <p><a href="https://www.hipwee.com/travel/rekomendasi-angkringan-jogja/" target="_blank">Angkringan Jogja Paling Favorit dan Terkenal</a></p>
+            <p><a href="https://www.hipwee.com/travel/spot-oleh-oleh-unik-jogja/" target="_blank">6 Pusat Kerajinan Khas Jogja Terlengkap</a></p>
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <div class="desc">
+            <p><font color="#043334" size="5"><u><b> Description </u></b></font>
+                <pre>
+
+Air Terjun Sri Gethuk merupakan salah satu objek wisata alam yang terletak di Kecamatan Playen, Kabupaten Gunungkidul, Yogyakarta. Air terjun ini berada
+di tepi Sungai Oyo sehingga untuk menikmatinya harus menyelusuri sungai dengan rakit. Sepanjang perjalanan akan disuguhi pemandangan berupa tebing
+kapur dikanan-kiri dan rimbunnya pepohonan. Jika di musim kemarau, air sungai akan sangat jernih berwana kehijauan dan tenang.
+
+Air Terjun Sri Gethuk juga disebut sebagai Air Terjun Slempret. Nama Slempret sendiri berasal dari legenda yang ada di Desa Bleberan. Menurut cerita yang
+beredar di masyarakat, air tejun ini merupakan pusatnya para jin dengan pimpinan Jin Anggo Menduro. Air terjun ini bermula dari tiga sumber mata air yaitu
+Kedungpoh, Ngandong, dan Ngumbul. Ketiga sumber mata air tersebut mengalir menjadi satu dan membentuk butiran-butiran air yang jatuh dari tebing
+bebatuan karst yang tandus.
+                </pre>       
+        </div>
+        
+        <div class="images">
+            <img src="resource/jogjamap1.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="" alt="waterfall" title="waterfall" href="home-3.html" coords="180,77,255,136" shape="rect">
+                <area target="" alt="merapi" title="merapi" href="home-4.html" coords="147,1,251,38" shape="rect">
+                <area target="" alt="tugu" title="tugu" href="home-5.html" coords="73,33,135,95" shape="rect">
+                <area target="" alt="pantai" title="pantai" href="home-2.html" coords="42,125,115,164" shape="rect">
+                <area target="" alt="temple" title="temple" href="home-6.html" coords="37,0,97,29" shape="rect">
+            </map>
+        </div>
+
+    </div>
+
+    <div class="wisata2">
+        <div class="image-gallery">
+            <div id="wisata1" class="circle" onclick="location.href='wisata/pantai.html';">
+            </div>
+            <a href="wisata/pantai.html"><h4>Wisata Pantai</h4></a>
+        </div>
+        <div class="image-gallery" onclick="location.href='wisata/gunung.html';">
+            <div id="wisata2" class="circle">
+            </div>
+            <a href="wisata/gunung.html"><h4>Wisata Gunung</h4></a>
+        </div>
+        <div class="image-gallery" onclick="location.href='wisata/candi.html';">
+            <div id="wisata3" class="circle">
+            </div>
+            <a href="wisata/candi.html"><h4>Wisata Candi</h4></a>            
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <h5><font face="Arial" color="#FFFCFF">All rights reserved &copy; UTS Web Based Application Development 2022</font></h5>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
